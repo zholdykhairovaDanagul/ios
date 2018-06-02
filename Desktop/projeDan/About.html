@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+	<script src="jquery-3.2.1.min.js"></script>
+	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript">
+    </script>
+	<script type="text/javascript">
+        ymaps.ready(init);
+        var myMap, 
+            myPlacemark;
+
+        function init(){ 
+            myMap = new ymaps.Map("map", {
+                center: [43.20769144, 76.66956309],
+                zoom: 7
+            }); 
+            
+            myPlacemark = new ymaps.Placemark([43.20769144, 76.66956309], {                       
+                hintContent: 'SDU!',
+                balloonContent: 'samyi druzhnii universitet'
+            });
+            
+            myMap.geoObjects.add(myPlacemark);
+        }
+    </script>
+	<script src="func.js"></script>
+	<style type="text/css"> 
+		body{
+			background: black;
+		}
+		.row{
+			margin-top: 10px; 
+		}
+		.qq {
+			padding-left: 15%;
+			padding-right: 15%;
+		}
+	</style>
+</head>
+<body>
+	<div class="container-fluid qq">
+		<div class="row justify-content-center">
+			<div class="col-12">
+				<img src="images/sushi.jpg" style="width: 100%; height: 100%">
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-12">	
+				<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+			    <a class="navbar-brand" href="index.html">Sushi</a>
+			    <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+			      <span class="navbar-toggler-icon"></span>
+			    </button>
+
+			    <div class="navbar-collapse collapse" id="navbarColor01" style="">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item">
+							<a id="recipes" class="nav-link" href="recepts.html">Recipes<span class="sr-only">(current)</span></a>
+						</li>
+						<li class="nav-item">
+							<a id="" class="nav-link" href="ingredients.html">Ingregients</a>
+						</li>
+						<li class="nav-item">
+							<a id="learn" class="nav-link" href="learn.html">Learn</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="travel.html">Travel</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="shop.html">Shop</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="about.html">About</a>
+						</li>
+					</ul>
+			    </div>
+			  </nav>
+			</div>
+		</div>
+		<div class="row table1" style="background-color: white; margin: 1%">
+			
+	<div class="col-lg-3 col-md-3 col-sm-12">
+		<table class="table">
+			<tbody>
+				<tr class="table-light">
+					<th>
+						<div class="container">
+							<img src="images/sdu.jpg" width="100%" height="100%">
+						</div>
+						<div class="container">
+							<p class="text-justify">
+								Kirk and Risa at the Linden Gallery in Door County, Wisconsin during their 2013 show, "Bringing Jaan Home."
+							</p>
+						</div>
+						<div class="container">
+							<p class="text-justify">
+								We are located in Kazakhstan,Almaty region,Kaskelen
+							</p>
+						</div>
+						
+					</th>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<div class="col-lg-6 col-md-6 col-sm-12">
+		<table class="table">
+			<tbody>
+				<tr class="table-light">
+					<td>
+						<div class="container">
+							<h1 class="text-center">Introduction to Japanese Ingredients</h1>
+							<p class="text-justify">
+								I started Savory Japan because I felt there was a need for a place where like-minded people could gather and learn about Japanese food. I'm not a professional chef, but I enjoy making the food of my native country for family and friends. Since I've lived in the US for most of my life, I’ve learned to adapt recipes to take advantage of locally available produce, with adaptations in taste as well. Frequent visits to Japan – particularly to Kyoto – have inspired further investigation and inspiration. This dual-country background gives me the unique perspective of being outside of the culture, yet part of it, and forms the place from which I write. In this way, I hope to serve as your guide and translator for the Japanese culinary world.
+							</p>
+						</div>
+						<div class="container">
+							<h2 class="text-center">The Culture of Rice</h2>
+							<p class="text-justify">
+								The recipes on this site are my own, unless otherwise mentioned. Most are easy, reflecting the Japanese belief that the best food is simple. Hard-to-find ingredients list substitutes, and tips and shortcuts are from my own experience. I am not a purist, but a modern-day home cook, and like you, I understand that time is precious.
+							</p>
+						</div>
+						<div class="container">
+							<h2 class="text-center">Tea: Japan's Aesthetic Life</h2>
+							<p class="text-justify">
+								The recipes on this site are my own, unless otherwise mentioned. Most are easy, reflecting the Japanese belief that the best food is simple. Hard-to-find ingredients list substitutes, and tips and shortcuts are from my own experience. I am not a purist, but a modern-day home cook, and like you, I understand that time is precious.
+							</p>
+						</div>
+						<div class="container">
+							<div id="map" style="width: 400px; height: 400px"></div>
+						</div>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<div class="col-lg-3 col-md-3 col-sm-12">
+		<table class="table">
+			<tbody>
+				<td class="table-light">
+					<div class="container">
+						<p class="text-justify">
+							The red circle represents a hanko (a stone stamp that is used as a signature in Japan). The format is inspired by the distinctive circular hanko that were hallmarks of the Rimpa school of art. The hiragana script says "umami" which the Japanese consider to be the fifth taste (after salty, sweet, sour, and bitter). Umami is translated into English as "savory," hence the site's name, Savory Japan. For more on umami, read the article The Power of 5.
+						</p>
+					</div>
+					<div class="container">
+						<p class="text-justify">
+							The red circle represents a hanko (a stone stamp that is used as a signature in Japan). The format is inspired by the distinctive circular hanko that were hallmarks of the Rimpa school of art. The hiragana script says "umami"  which the Japanese consider to be the fifth taste (after salty, sweet, sour, and bitter). Umami is translated into English as "savory," hence the site's name, Savory Japan. For more on umami, read the article The Power of 5.
+						</p>
+					</div>
+				</td>
+			</tbody>
+		</table>
+	</div>
+</div>
